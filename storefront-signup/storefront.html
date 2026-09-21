@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore fantasy, science fiction, and mystery at Quest &amp; Quill, a fictional bookstore.">
+  <title>Quest &amp; Quill | Storefront</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-exercise.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable p-3" href="#home">Skip to content</a>
+  <nav class="navbar navbar-expand-md" data-bs-theme="dark" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Quest &amp; Quill</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavigation">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#images">Images</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="home" class="flex-grow-1">
+
+    <header class="jumbotron py-5 border-bottom">
+      <div class="container py-md-4">
+        <p class="text-uppercase small fw-bold mb-3">Quest &amp; Quill Bookstore</p>
+
+        <h1 class="display-5 fw-bold">Welcome to Williams’ Website</h1>
+        <p class="lead mb-3">I will share some images of my interests</p>
+        <p class="mb-4">Your next adventure starts with a page.</p>
+        <a class="btn btn-primary px-4" href="#images">Explore the books</a>
+      </div>
+    </header>
+
+    <section id="images" class="container py-5" aria-labelledby="images-heading">
+      <h2 id="images-heading">Stories to explore</h2>
+      <p class="text-secondary mb-4">Fantasy, science fiction, and mystery from our fictional collection.</p>
+
+      <div class="row g-4">
+        <article class="col-md-4">
+          <img class="img-fluid rounded book-cover mb-3" src="images/fantasy.jpeg" width="250" height="350" alt="Purple fantasy character surrounded by streaks of energy">
+          <p class="genre small text-uppercase fw-bold mb-2">Fantasy</p>
+          <h3 class="h4">The Forgotten Kingdom</h3>
+          <p>An ancient kingdom, a missing heir, and one final chance to restore the realm.</p>
+          <p class="fw-bold">$19.99</p>
+        </article>
+        <article class="col-md-4">
+          <img class="img-fluid rounded book-cover mb-3" src="images/scifi.jpeg" width="250" height="350" alt="Illustrated science fiction character in futuristic armor">
+          <p class="genre small text-uppercase fw-bold mb-2">Science fiction</p>
+          <h3 class="h4">Beyond the Last Star</h3>
+          <p>Humanity travels beyond known space and discovers that it may not be alone.</p>
+          <p class="fw-bold">$22.99</p>
+        </article>
+        <article class="col-md-4">
+          <img class="img-fluid rounded book-cover mb-3" src="images/mystery.png" width="250" height="350" alt="Group portrait used for the mystery selection on the original storefront">
+          <p class="genre small text-uppercase fw-bold mb-2">Mystery</p>
+          <h3 class="h4">The Midnight Archive</h3>
+          <p>A hidden library contains secrets that someone is determined to protect.</p>
+          <p class="fw-bold">$17.99</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="py-5 border-top border-bottom about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-7">
+            <h2 id="about-heading">About Us</h2>
+            <p>Quest &amp; Quill is a fictional bookstore for readers looking for their next great story. We offer fantasy, science fiction, mystery, isekai, and adventure books.</p>
+            <p class="mb-0">Quest &amp; Quill was created for readers who enjoy discovering new stories, characters, and adventures.</p>
+          </div>
+          <aside class="col-md-4 offset-md-1" aria-labelledby="hours-heading">
+            <h3 id="hours-heading" class="h4">Store Hours</h3>
+            <p class="mb-0">Monday – Friday: 9:00 AM – 8:00 PM<br>Saturday: 10:00 AM – 6:00 PM<br>Sunday: 11:00 AM – 4:00 PM</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container py-5" aria-labelledby="contact-heading">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h2 id="contact-heading">Contact</h2>
+          <p>Have questions or feedback? We'd love to hear from you!</p>
+        </div>
+        <div class="col-md-7">
+          <form onsubmit="event.preventDefault()">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input class="form-control" type="text" id="name" name="name" autocomplete="name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input class="form-control" type="email" id="email" name="email" autocomplete="email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+            </div>
+            <button class="btn btn-outline-primary" type="reset">Clear Form</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 mt-auto text-white">
+    <div class="container d-md-flex justify-content-between gap-3">
+      <p class="mb-2 mb-md-0">Quest &amp; Quill Bookstore<br><span class="small">1600 Woodland Rd, Abington, PA</span></p>
+      <p class="small mb-0">Copyright © 2026 · Quest &amp; Quill</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body></html>
